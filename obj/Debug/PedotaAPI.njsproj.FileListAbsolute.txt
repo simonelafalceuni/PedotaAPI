@@ -1,0 +1,2 @@
+C:\Users\brienzama\source\repos\PedotaAPI\obj\Debug\PedotaAPI.njsproj.CoreCompileInputs.cache
+C:\Users\brienzama\source\repos\PedotaAPI\bin\Microsoft.NodejsTools.WebRole.dll
