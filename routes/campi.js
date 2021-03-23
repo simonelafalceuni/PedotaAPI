@@ -12,7 +12,6 @@ router.get('/', function (req, res) {
         codice: "AAB"
     }]
 
-    console.log("DEBUG")
     res.json(campi);
 });
 
