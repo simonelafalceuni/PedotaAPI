@@ -9,7 +9,7 @@ router.get('/', function (req, res) {
         codice: "AAA"
     }, {
         nome: "Campo2",
-        codice: "AAB"
+        codice: "AABC"
     }]
 
     res.json(campi);
