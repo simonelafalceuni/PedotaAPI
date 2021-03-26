@@ -25,8 +25,16 @@ const swaggerSpec = swaggerJSDoc(options);
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var campi = require('./routes/campi');
+var centrosportivo = require('./routes/centrosportivo');
 
 var app = express();
+
+const db = require("./model/init");
+// db.sequelize.sync();
+(async () => {
+    // await db.sequelize.sync({ force: true });
+    console.log(db);
+  })();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -43,7 +51,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/campi', campi);
-
+app.use('/centrosportivo', centrosportivo);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
