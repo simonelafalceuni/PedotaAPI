@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `campo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `campo` (
-  `Id` int NOT NULL,
+  `Id` int NOT NULL auto_increment,
   `Nome` varchar(45) NOT NULL,
   `CentroSportivo_Id` int NOT NULL,
   PRIMARY KEY (`Id`,`CentroSportivo_Id`),
@@ -50,7 +50,7 @@ DROP TABLE IF EXISTS `centrosportivo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `centrosportivo` (
-  `Id` int NOT NULL,
+  `Id` int NOT NULL auto_increment,
   `Nome` varchar(45) NOT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -74,7 +74,7 @@ DROP TABLE IF EXISTS `prenotazione`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `prenotazione` (
-  `Id` int NOT NULL,
+  `Id` int NOT NULL auto_increment,
   `DataInizio` datetime NOT NULL,
   `DataFine` datetime NOT NULL,
   `Campo_Id` int NOT NULL,
@@ -104,7 +104,7 @@ DROP TABLE IF EXISTS `utente`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `utente` (
-  `Id` int NOT NULL,
+  `Id` int NOT NULL auto_increment,
   `Email` varchar(45) DEFAULT NULL,
   `Nome` varchar(45) DEFAULT NULL,
   `Cognome` varchar(45) DEFAULT NULL,
